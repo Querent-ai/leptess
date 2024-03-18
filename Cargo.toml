@@ -1,6 +1,6 @@
 [package]
 name = "leptess"
-version = "0.14.0"
+version = "0.15.0"
 authors = ["QP Hou <dave2008713@gmail.com>", "Chris Couzens <ccouzens@gmail.com>"]
 description = "Productive Rust binding for Tesseract and Leptonica."
 homepage = "https://github.com/houqp/leptess"
@@ -11,7 +11,7 @@ license = "MIT"
 documentation = "https://houqp.github.io/leptess/leptess/index.html"
 
 [dependencies]
-tesseract-plumbing = "~0.11"
+tesseract-plumbing = "~0.11.1"
 thiserror = "1"
 
 [dev-dependencies]
@@ -21,3 +21,4 @@ regex = "1.4.3"
 [features]
 default = ["tesseract_5_2"]
 tesseract_5_2 = ["tesseract-plumbing/tesseract_5_2"]
+bundled = ["tesseract-plumbing/bundled"]
